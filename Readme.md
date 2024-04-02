@@ -12,5 +12,10 @@ build and install
 then run
 
 - rustflix-clap-tutorial user create bob 'bob@ale.net'
-  output:
-  RustflixArgs { entity_type: User(UserCommand { command: Create(CreateUser { name: "bob", email: "bob@ale.net" }) }) }
+
+example output:
+RustflixArgs { entity_type: User(UserCommand { command: Create(CreateUser { name: "bob", email: "bob@ale.net" }) }) }
+
+or without installation
+
+- cargo run -- user create bob 'bob@ale.net'

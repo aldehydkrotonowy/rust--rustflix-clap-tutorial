@@ -27,11 +27,11 @@ pub struct UserCommand {
 pub enum UserSubcommand {
     /// create new user
     Create(CreateUser),
-    // /// update existing user
+    /// update existing user
     Update(UpdateUser),
-    // /// delete user
+    /// delete user
     Delete(DeleteUser),
-    // /// show all users
+    /// show all users
     Show,
 }
 

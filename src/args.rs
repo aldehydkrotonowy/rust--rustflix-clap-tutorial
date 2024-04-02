@@ -28,11 +28,11 @@ pub enum UserSubcommand {
     /// create new user
     Create(CreateUser),
     // /// update existing user
-    // Update(UpdateUser),
+    Update(UpdateUser),
     // /// delete user
-    // Delete(DeleteUser),
+    Delete(DeleteUser),
     // /// show all users
-    // Show,
+    Show,
 }
 
 #[derive(Debug, Args)]
@@ -41,4 +41,15 @@ pub struct CreateUser {
     pub name: String,
     /// email addres of the user
     pub email: String,
+}
+
+#[derive(Debug, Args)]
+pub struct UpdateUser {
+    pub name: String,
+    pub email: String,
+}
+
+#[derive(Debug, Args)]
+pub struct DeleteUser {
+    pub name: String,
 }
